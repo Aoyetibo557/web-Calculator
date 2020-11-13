@@ -1,7 +1,7 @@
 
 
 // VARIABLES
-var prevAns;
+var prevAns = 0;
 function insert(num){
     // document.form.textview.value=document.form.textview.value+num;
     document.form.textview.value+=num;
@@ -14,6 +14,8 @@ function equal(){
         prevAns = eval(exp);
     }
     document.getElementById("res").innerHTML = "Ans: "+prevAns;
+
+    clear();
 
 }
 function clear(){
@@ -33,3 +35,13 @@ function getAns(){
     document.getElementById("res").innerHTML = "PrevAns: "+prevAns;
 }
 
+
+function addHide(entry){
+    var doc = document.getElementById(entry);
+    doc.classList.add("_hide");
+}
+
+function removeHide(entry){
+    var doc = document.getElementById(entry);
+    doc.classList.remove("_hide");
+}

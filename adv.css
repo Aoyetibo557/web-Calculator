@@ -2,10 +2,9 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* background-color: red; */
     border: 1px solid black;
     justify-content:center;
-    width: 48%;
+    width: 50%;
     padding: 15px;
     margin-left: 24%;
 
@@ -130,4 +129,15 @@ input:checked + .slider:before {
   
 .slider.round:before {
     border-radius: 50%;
+}
+
+._abc__table{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 50%;
+}
+
+._hide{
+    display:none;
 }

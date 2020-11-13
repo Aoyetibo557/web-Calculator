@@ -32,7 +32,7 @@
             </form>
         </div>
         <div class="dir">
-            <a href=#><span>main</span> <span>abc</span> <span>func</span></a>
+            <a href=#><span onclick="addHide('abc_inner_container'); removeHide('inner-container');">main</span> <span onclick="addHide('inner-container'); removeHide('abc_inner_container');">abc</span> <span>func</span></a>
         </div>
 
         <div id="inner-container" class="inner-container">
@@ -106,11 +106,60 @@
                     </tr>
                     <tr>
                         <td><input class="advBtn" type="button" value="del" onclick="testClear()"></td>
-                        <td><input class="advBtn" type="button" value="=" onclick="equal()"></td>
+                        <td><input class="advBtn" type="button" value='&slarr;' onclick= "back();"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input class="advBtn" type="button" value="=" onclick="equal()"></td>
+
                     </tr>
                 </table>
             </div>
             
+        </div>
+
+
+        <div id="abc_inner_container" class="_hide">
+           <div class="_abc__table">
+            <table id="abc_table">
+                <tr>
+                    <td><input class="advBtn" type="button" value="A" onclick="insert('A')"></td>
+                    <td><input class="advBtn" type="button" value="B" onclick="insert('B')"></td>
+                    <td><input class="advBtn" type="button" value="C" onclick="insert('C')"></td>
+                    <td><input class="advBtn" type="button" value="D" onclick="insert('D')"></td>
+                    <td><input class="advBtn" type="button" value="E" onclick="insert('E')"></td>
+                    <td><input class="advBtn" type="button" value="F" onclick="insert('F')"></td>
+                    <td><input class="advBtn" type="button" value="G" onclick="insert('G')"></td>
+                    <td><input class="advBtn" type="button" value="H" onclick="insert('H')"></td>
+                    <td><input class="advBtn" type="button" value="I" onclick="insert('I')"></td>
+                    <td><input class="advBtn" type="button" value="J" onclick="insert('J')"></td>
+                    <td><input class="advBtn" type="button" value="K" onclick="insert('K')"></td>
+                </tr>
+
+                <tr>
+                    <td><input class="advBtn" type="button" value="L" onclick="insert('L')"></td>
+                    <td><input class="advBtn" type="button" value="M" onclick="insert('M')"></td>
+                    <td><input class="advBtn" type="button" value="N" onclick="insert('N')"></td>
+                    <td><input class="advBtn" type="button" value="O" onclick="insert('O')"></td>
+                    <td><input class="advBtn" type="button" value="P" onclick="insert('P')"></td>
+                    <td><input class="advBtn" type="button" value="Q" onclick="insert('Q')"></td>
+                    <td><input class="advBtn" type="button" value="R" onclick="insert('R')"></td>
+                    <td><input class="advBtn" type="button" value="S" onclick="insert('S')"></td>
+                    <td><input class="advBtn" type="button" value="T" onclick="insert('T')"></td>
+                    <td><input class="advBtn" type="button" value="U" onclick="insert('U')"></td>
+                    <td><input class="advBtn" type="button" value="V" onclick="insert('V')"></td>
+                </tr>
+
+                <tr >
+                    <td colspan="2"><input class="advBtn" type="button" value="W" onclick="insert('W')"></td>
+                    <td colspan="2"><input class="advBtn" type="button" value="X" onclick="insert('X')"></td>
+                    <td colspan="2"><input class="advBtn" type="button" value="Y" onclick="insert('Y')"></td>
+                    <td colspan="3"><input class="advBtn" type="button" value="Z" onclick="insert('Z')"></td>
+                    <td><button id="cap" style="width: 100px; height: 50px; cursor: pointer;">&uarr;</button></td>
+                </tr>
+            </table>
+           </div>
+
+           
         </div>
         
     </div>
